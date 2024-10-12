@@ -11,6 +11,19 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: 'translateX(0)',
+          },
+          to: {
+            transform: 'translateX(calc(-100% - 2.5rem))',
+          },
+        },
+      },
     },
   },
   plugins: [],
